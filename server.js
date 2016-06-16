@@ -6,6 +6,10 @@ var port = process.env.PORT || 3000;
 // MIDDLEWARE
 app.use(express.static('public'));
 
+//CONTROLLERS
+var rootController = require("./controllers/root.js");
+app.use("/root", rootController)
+
 // LISTEN
 app.listen(port);
 console.log('=============================');
