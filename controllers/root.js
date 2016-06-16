@@ -9,6 +9,9 @@ router.get('/', function(req, res){
   res.send("root");
 });
 
-
+router.get("/joe", function(req, res) {
+  console.log("joe");
+  res.send("joe");
+})
 
 module.exports = router;
